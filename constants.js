@@ -10,6 +10,13 @@ const NOT_FOUND_MSG = "not found"
 const DATA_EMPTY_MSG = "The data is empty"
 const INVALID_WEBSITE_MSG = "The website is not https://beta.tala.xyz/"
 
+// pattern API name
+const PATTERN_API_NAME = "tiki360-extension-"
+const PATTERN_DS_INSURANCE = "ds-insurance"
+
+// status
+const COMPLETE = "complete"
+
 // user agent
 const ARRAY_USER_AGENT = [
     'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/37.0.2062.94 Chrome/37.0.2062.94 Safari/537.36',

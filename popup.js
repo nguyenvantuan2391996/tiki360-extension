@@ -68,11 +68,18 @@ window.addEventListener("load", async (event) => {
                 }
             })
     })
-})
 
-function getElementByXpath(path) {
-    return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-}
+    // set value list apis request
+    let listAPIs = ""
+    await chrome.storage.local.get(null, function(apis) {
+        let index = 1
+        for (let element of Object.keys(apis)) {
+            listAPIs += index.toString() + "." + apis[element] + "\n\n"
+            index++
+        }
+        document.getElementById("list-apis-request").textContent = listAPIs
+    });
+})
 
 async function copyText(id) {
     const copyText = document.getElementById(id)

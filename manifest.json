@@ -21,10 +21,19 @@
       "run_at": "document_start"
     }
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ],
   "permissions": [
     "storage",
     "activeTab",
-    "tabs"
+    "tabs",
+    "webRequest",
+    "declarativeNetRequest",
+    "identity"
   ],
   "manifest_version": 3
 }
