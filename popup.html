@@ -9,7 +9,7 @@
 
 <body>
 
-<div class="container">
+<div class="container" style="width: 800px">
     <div class="input-group">
         <span class="input-group-addon hidden-xs">
           <strong>Customer token</strong>
@@ -61,7 +61,20 @@
     </div>
 
     <div class="input-group">
-        <label for="list-apis-request"></label><textarea id="list-apis-request" class="form-control mb-3" rows="8" placeholder="List APIs request"></textarea>
+        <div class="table-responsive">
+            <table class="table" id="table-result">
+                <thead>
+                <tr>
+                    <th>Curl</th>
+                    <th>URL</th>
+                    <th>Status</th>
+                    <th>Request-ID</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
