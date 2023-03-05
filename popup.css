@@ -16,7 +16,7 @@
     background: #f1bb3a;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 850px) {
     .copied {
         left: 350px;
     }
@@ -29,6 +29,6 @@
 }
 
 body {
-    width: 600px;
+    width: 850px;
     height: 500px;
 }

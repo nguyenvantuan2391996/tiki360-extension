@@ -8,7 +8,7 @@ const HANDLE_LOAD_EXTENSION = "handleLoadExtension"
 // msg
 const NOT_FOUND_MSG = "not found"
 const DATA_EMPTY_MSG = "The data is empty"
-const INVALID_WEBSITE_MSG = "The website is not https://beta.tala.xyz/"
+const INVALID_WEBSITE_MSG = "The website is not https://beta.tala.xyz or https://tiki.vn"
 
 // pattern API name
 const PATTERN_API_NAME = "tiki360-extension-"
@@ -16,6 +16,15 @@ const PATTERN_DS_INSURANCE = "ds-insurance"
 
 // status
 const COMPLETE = "complete"
+const LOADING = "loading"
+
+const X_REQUEST_ID = "x-request-id"
+
+// env
+const PREFIX_URL_DEV = "https://beta.tala.xyz"
+const PREFIX_URL_PROD = "https://tiki.vn"
+const PREFIX_API_DEV = "https://api.tala.xyz"
+const PREFIX_API_PROD = "https://api.tiki.vn"
 
 // user agent
 const ARRAY_USER_AGENT = [
